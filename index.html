@@ -1,17 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Morgan F. Evans</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Morgan Evans | Engineering Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-  <h1>Morgan F. Evans</h1>
-  <p>Aerospace engineer focused on simulation, controls, and engineering software.</p>
-  <nav>
-    <a href="projects.html">Projects</a>
-    <a href="resume.pdf">Resume</a>
-    <a href="mailto:morganfevans@gmail.com">Contact</a>
-  </nav>
+  <main class="site">
+
+    <header class="header">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="Morgan_Resume_Website.pdf">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <div class="hero-text">
+        <p class="eyebrow">Aerospace Engineer</p>
+        <h1>Morgan Evans</h1>
+        <p class="tagline">Simulation • Controls • Aerospace Systems</p>
+
+        <p>
+          I build flight simulation software, engineering data pipelines, and technical systems
+          for aerospace analysis, testing, and design.
+        </p>
+
+        <div class="buttons">
+          <a class="button" href="#projects">View Projects</a>
+          <a class="button secondary" href="Morgan_Resume_Website.pdf">Download Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <span>Project Screenshot</span>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature-image">
+        <span>Simulator / Architecture Image</span>
+      </div>
+
+      <div class="feature-text">
+        <p class="eyebrow">Current Project</p>
+        <h2>Exoplanet Data Analysis</h2>
+
+        <p>
+          Developing Python tools to automate the processing and analysis of large astronomical datasets.
+          The project involves scientific computing libraries and reproducible pipelines for scalable analysis of publicly available data.
+        </p>
+
+        <a class="button secondary" href="#projects">Explore Work</a>
+      </div>
+    </section>
+
+    <section class="specializations">
+  <h2>My Specializations</h2>
+  <p class="section-subtitle">
+    Technical areas where I have hands-on experience.
+  </p>
+
+  <div class="specialization-grid">
+
+    <article class="specialization-card">
+      <h3>Flight Simulation</h3>
+      <p>
+        Desktop flight simulation using JSBSim and PyQt with telemetry visualization and
+        real-time instrumentation.
+      </p>
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>PyQt</span>
+        <span>JSBSim</span>
+        <span>Git</span>
+      </div>
+    </article>
+
+    <article class="specialization-card">
+      <h3>Controls</h3>
+      <p>
+        Dynamic system modeling, control analysis, and simulation using aerospace engineering tools.
+      </p>
+      <div class="tech-tags">
+        <span>MATLAB</span>
+        <span>Simulink</span>
+        <span>Python</span>
+      </div>
+    </article>
+
+    <article class="specialization-card">
+      <h3>Data Automation</h3>
+      <p>
+        Automated engineering workflows and large-scale data processing using custom Python tools.
+      </p>
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>Excel</span>
+        <span>Git</span>
+      </div>
+    </article>
+
+    <article class="specialization-card">
+      <h3>R&amp;D Testing</h3>
+      <p>
+        Mechanical testing, laboratory analysis, and characterization of engineering materials.
+      </p>
+      <div class="tech-tags">
+        <span>Instron</span>
+        <span>Rheometers</span>
+        <span>Data Analysis</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <section class="projects" id="projects">
+      <h2>Featured Projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="card-image"></div>
+          <h3>eVTOL Simulator</h3>
+          <p>Flight dynamics, real-time instrumentation, telemetry, and simulation architecture.</p>
+          <a href="#">Learn More</a>
+        </article>
+
+        <article class="project-card">
+          <div class="card-image"></div>
+          <h3>3M R&amp;D</h3>
+          <p>Mechanical testing, adhesive characterization, automation, and engineering analysis.</p>
+          <a href="#">Learn More</a>
+        </article>
+
+        <article class="project-card">
+          <div class="card-image"></div>
+          <h3>AMAAZE Labs</h3>
+          <p>Python automation for organizing and validating 7,000+ research files.</p>
+          <a href="#">Learn More</a>
+        </article>
+      </div>
+
+      <h2 class="more-work-title">More Work</h2>
+
+      <div class="mini-project-grid">
+        <a href="#">Wind Tunnel Analysis</a>
+        <a href="#">Aeromech Controls Poster</a>
+        <a href="#">Engineering Portfolio</a>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+  <h2>Contact</h2>
+
+  <p>
+    I'm always happy to connect about aerospace engineering, software,
+    simulation, and new opportunities.
+  </p>
+
+  <div class="contact-links">
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:morganfevans@gmail.com">
+        morganfevans@gmail.com
+      </a>
+    </p>
+
+
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank">
+        linkedin.com/in/morganfevans
+      </a>
+    </p>
+
+
+  </div>
+</footer>
+
+  </main>
 </body>
 </html>
