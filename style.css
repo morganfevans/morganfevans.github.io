@@ -22,7 +22,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--surface);
+  background: var(--accent2);
   color: var(--text);
   font-family: 'Raleway', Arial, sans-serif;
 }
