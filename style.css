@@ -13,6 +13,7 @@
   --accent2: #B6CFE8;    /* lighter blue from image */
   --text: #141414;      /* primary text */
   --muted: #6F6F6F;     /* secondary text */
+  --white: #FFFFFF;     /* white for text and accents */
 }
 
 html {
@@ -31,7 +32,7 @@ body {
   margin: 0px auto;
   border: 1px solid var(--background);
   border-radius: 8px;
-  background: var(--ffffff);
+  background: #ffffff;
 }
 
 .header {
@@ -337,7 +338,7 @@ p {
 }
 
 .skill-item p {
-  margin: 0 0 8;
+  margin: 0 0 8px;
   font-size: 15px;
   line-height: 1.5;
   color: var(--muted);
