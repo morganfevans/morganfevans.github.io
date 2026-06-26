@@ -2,18 +2,19 @@
   box-sizing: border-box;
 }
 /*change*/
-:root {
-  --section-padding: 20px;
+:root{
+    --background: #F7F5F2;
+    --background2: #DDD5CC;
 
-  --background: #F0ECE7; /* page background */
-  --background2: #CABCAB;
-  --surface: #FBE4EA;    /* cards & pills */
-  --primary: #1F2A44;    /* burgundy/red */
-  --accent: #F6C1CC;     /* pink from image */
-  --accent2: #B6CFE8;    /* lighter blue from image */
-  --text: #141414;      /* primary text */
-  --muted: #6F6F6F;     /* secondary text */
-  --white: #FFFFFF;     /* white for text and accents */
+    --surface: #FFFFFF;
+
+    --primary: #24344D;   /* deep navy */
+    --accent: #8A6A4A;    /* warm leather */
+    --accent2: #B7CADB;   /* dusty blue */
+
+    --text: #1F1F1F;
+    --muted: #6E7277;
+    --white: #FFFFFF;
 }
 
 html {
@@ -22,7 +23,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--accent2);
+  color: var(--muted);
   color: var(--text);
   font-family: 'Raleway', Arial, sans-serif;
 }
@@ -44,7 +45,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 32px;
-  background: url("Patterns/LargeBlueDotsOnNavy.JPG");
+  background: var(--background);
   background-position: center bottom;
   background-repeat: repeat;
   background-size: 490px auto;
@@ -98,90 +99,65 @@ nav a:hover {
 .hero {
   display: grid;
   grid-template-columns: 55% 45%;
-  gap: 50px;
-  align-items: start;
-  padding: 30px 70px 30px 70px;
+  gap: 60px;
+  align-items: center;
+  padding: 50px 70px 40px;
   background: var(--background);
 }
 
-.hero-left {
+.hero-text {
   max-width: 560px;
 }
 
-.hero-right {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.eyebrow {
+  margin: 0 0 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.hero h1 {
+  margin: 0 0 20px;
+  font-size: 68px;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  color: var(--text);
+}
+
+.tagline {
+  margin: 0 0 30px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.hero-text p:not(.eyebrow):not(.tagline) {
+  margin: 0 0 36px;
+  max-width: 520px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text);
 }
 
 .hero-image {
   width: 100%;
-  max-width: 340px;
-  height: 350px;
-  aspect-ratio: 1 / 1;
-  background: url("images/Headshot1.png"), no-repeat;
-  background-position: 40% center;
-  background-size: 100%;
-  border: 3px solid var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary);
-  font-size: 14px;
-  border: 3px var(--text) solid;
+  max-width: 460px;
+  height: 380px;
+
+  background-image: url("images/Headshot1.png");
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: cover;
+
+  border: 3px solid #D7D2CB;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  justify-self: center;
 }
 
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 18px;
-}
-
-.hero h1 {
-  font-size: 56px;
-  line-height: 0.95;
-  letter-spacing: -0.05em;
-  margin: 0 0 20px;
-}
-
-.hero-subtitle {
-  font-family: Georgia, serif;
-  font-size: 28px;
-  line-height: 1.3;
-  color: var(--primary);
-  margin-bottom: 40px;
-}
-
-.hero-bottom {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 32px;
-  margin-bottom: 36px;
-}
-
-.hero-body p {
-  font-size: 14px;
-  line-height: 1.75;
-  color: var(--muted);
-  margin-bottom: 20px;
-}
-
-.hero-highlight {
-  border-left: 2px solid var(--accent);
-  padding-left: 24px;
-  display: flex;
-  align-items: center;
-}
-
-.hero-highlight p {
-  font-size: 17px;
-  font-weight: 800;
-  line-height: 1.35;
-  margin: 0;
-  color: var(--text);
+.buttons {
+  margin-top: 8px;
 }
 
 .buttons {
@@ -193,7 +169,8 @@ nav a:hover {
   padding: 11px 22px;
   margin: 6px 8px 0 0;
   border: 3px solid var(--text);
-  background: var(--text);
+  background: var(--primary);
+  border-radius: 999px;
   color: var(--background);
   text-decoration: none;
   font-size: 13px;
@@ -217,7 +194,7 @@ nav a:hover {
 h2 {
   font-size: 30px;
   line-height: 1.2;
-  margin: 10px 0 16px;
+  margin: 0 0 16px;
   letter-spacing: -0.02em;
 }
 
@@ -235,15 +212,14 @@ p {
 }
 
 
-
 .projects {
-  padding: var(--section-padding) 60px;
+  padding: 70px 60px 20px;
   background: var(--background);
 }
 
 .projects h2 {
   text-align: center;
-  margin-bottom: 36px;
+  margin: 0 0 36px;
 }
 
 .project-grid {
@@ -386,44 +362,38 @@ p {
 
 
 .quotes {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  padding: 30px 70px 30px;
+  padding: 20px 70px 40px;
   background: var(--background);
 }
 
 .quote-card {
+  max-width: 720px;
+  margin: 0 auto;
+
   background: var(--accent2);
-  border: var(--text) 3px solid;
-  padding: 0px 30px 32px 30px;
+  border: 2px solid var(--primary);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+
+  padding: 28px 40px;
   text-align: center;
-  position: relative;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .quote-text {
-  font-family: Georgia, serif;
-  font-size: 17px;
-  line-height: 1.6;
-  color: var(--primary);
-  margin: 28px 0 30px;
-}
-
-.quote-person h3 {
-  margin: 0 0 4px;
-  font-size: 15px;
-  color: var(--text);
-}
-
-.quote-person p {
   margin: 0;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.quote-person {
+  margin-top: 18px;
   font-size: 12px;
-  color: var(--muted);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text);
 }
 
 .footer {
