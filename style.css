@@ -29,7 +29,8 @@ body {
 }
 
 .site {
-  width: 980px;
+  max-width: 980px;
+  width: 100%;
   margin: 0px auto;
   border: 1px solid var(--background);
   border-radius: 8px;
@@ -56,7 +57,7 @@ body {
   width: 34px;
   height: 34px;
   background: var(--accent);
-  color: var(--text);
+  color: var(--background);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +121,7 @@ nav a:hover {
 
 .hero h1 {
   margin: 0 0 20px;
-  font-size: 68px;
+  font-size: 60px;
   line-height: 0.95;
   letter-spacing: -0.05em;
   color: var(--text);
@@ -367,29 +368,27 @@ p {
 }
 
 .quote-card {
-  max-width: 720px;
+  max-width: 620px;
   margin: 0 auto;
-
   background: var(--accent2);
   border: 2px solid var(--primary);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-
-  padding: 28px 40px;
+  padding: 22px 34px;
   text-align: center;
 }
 
 .quote-text {
   margin: 0;
   font-family: Georgia, serif;
-  font-size: 24px;
-  line-height: 1.4;
+  font-size: 20px;
+  line-height: 1.35;
   font-weight: 500;
   color: var(--primary);
 }
 
 .quote-person {
-  margin-top: 18px;
-  font-size: 12px;
+  margin-top: 12px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
