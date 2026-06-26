@@ -11,16 +11,19 @@
 <body>
   <main class="site">
 
-    <header class="header">
+   <header class="header">
       <a class="logo" href="#about">ME</a>
 
       <nav>
         <a href="#projects">Projects</a>
-        <a href="Morgan_Resume_Website.pdf">Resume</a>
+        <a href="Morgan_Resume_Website.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+          Resume
+        </a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
-
     <section class="hero" id="about">
       <div class="hero-text">
         <p class="eyebrow">Engineering & Software</p>
@@ -33,8 +36,14 @@
           and solving complex problems with innovative solutions.
         </p>
 
-        <div  class="buttons">
-          <a class="button" href="Morgan_Resume_Website.pdf">Download Resume</a>
+        <div class="buttons">
+        <a
+          class="button"
+          href="Morgan_Resume_Website.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+          Download Resume
+        </a>
         </div>
       </div>
 
@@ -163,98 +172,80 @@
 
 <section class="resume-overview">
 
-  <div class="overview-card skills-card">
+  <div class="resume-grid">
 
-    <h3>Skills</h3>
+    <!-- LEFT: SKILLS -->
+    <div class="overview-card skills-card">
 
-    <div class="skills-grid">
+      <h3>Skills</h3>
 
-      <div>
-        <div class="skill-item">
-          <h4>Python</h4>
-          <p>
-            eVTOL Simulator<br>
-            AMAAZE Labs<br>
-            Exoplanet Analysis
-          </p>
+      <div class="resume-skills">
+
+        <div class="skill-line">
+          <h4>Programming:</h4>
+          <p>Python, MATLAB, NumPy, Pandas, Matplotlib</p>
         </div>
 
-        <div class="skill-item">
-          <h4>Flight Simulation</h4>
-          <p>JSBSim • PyQt • eVTOL Simulator</p>
-        </div>
-      </div>
-
-      <div>
-        <div class="skill-item">
-          <h4>Controls &amp; Dynamic Systems</h4>
-          <p>MATLAB • Simulink • Aircraft Dynamics</p>
+        <div class="skill-line">
+          <h4>Engineering:</h4>
+          <p>Simulink, SolidWorks, AutoCAD, Autodesk Inventor, Fusion 360, Arduino</p>
         </div>
 
-        <div class="skill-item">
-          <h4>Data Analysis</h4>
-          <p>3M R&amp;D • Wind Tunnel • Exoplanet Analysis</p>
+        <div class="skill-line">
+          <h4>Tools:</h4>
+          <p>Git, GitHub, Microsoft Excel, Google Colab</p>
         </div>
 
-        <div class="skill-item">
-          <h4>Programming</h4>
-          <p>Python • MATLAB • Git • GitHub</p>
-        </div>
-      </div>
-
-      <div>
-        <div class="skill-item">
-          <h4>Simulation</h4>
-          <p>JSBSim • PyQt • Simulink</p>
+        <div class="skill-line">
+          <h4>Laboratory &amp; Testing:</h4>
+          <p>Instron, Rheometers, TRIOS, Bluehill Universal, Oscilloscopes</p>
         </div>
 
-        <div class="skill-item">
-          <h4>Laboratory Testing</h4>
-          <p>Instron • Rheometers • Microscopy</p>
-        </div>
-
-        <div class="skill-item">
-          <h4>Automation</h4>
-          <p>Pandas • Excel • Engineering Workflows</p>
-        </div>
       </div>
 
     </div>
 
-  </div>
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
 
-  <div class="education-experience-row">
+      <!-- EDUCATION -->
+      <div class="overview-card education-card">
 
-    <div class="overview-card education-card">
-      <h3>Education</h3>
-
-      <div class="skill-item">
-        <h4>University of Minnesota</h4>
-        <p>B.S. Aerospace Engineering</p>
-      </div>
-    </div>
-
-    <div class="overview-card experience-card">
-      <h3>Experience</h3>
-
-      <div class="experience-grid">
-
-        <div class="skill-item">
-          <h4>3M R&amp;D</h4>
-          <p>Technical Aide</p>
-        </div>
-
-        <div class="skill-item">
-          <h4>AMAAZE Labs</h4>
-          <p>Research Assistant</p>
-        </div>
+        <h3>Education</h3>
 
         <div class="skill-item">
           <h4>University of Minnesota</h4>
-          <p>Lead Teaching Assistant</p>
+          <p>B.S. Aerospace Engineering</p>
         </div>
 
       </div>
+
+      <!-- EXPERIENCE -->
+      <div class="overview-card experience-card">
+
+        <h3>Experience</h3>
+
+        <div class="experience-list">
+
+          <div class="experience-item">
+            <h4>3M R&amp;D</h4>
+            <p>Technical Aide</p>
+          </div>
+
+          <div class="experience-item">
+            <h4>AMAAZE Labs</h4>
+            <p>Research Assistant</p>
+          </div>
+
+          <div class="experience-item">
+            <h4>University of Minnesota</h4>
+            <p>Lead Teaching Assistant</p>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
   </div>
@@ -276,12 +267,12 @@
 
       <article class="quote-card">
         <p class="quote-text">
-          "Quote / Reference"
+          "The map is not the territory."
         </p>
 
         <div class="quote-person">
-          <h3>Name</h3>
-          <p>Title / Company</p>
+          <h3>Alfred Korzybski</h3>
+          <p>- Morgan Evans</p>
         </div>
       </article>
 

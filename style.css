@@ -304,64 +304,31 @@ p {
 }
 
 .resume-overview {
-  padding: 60px 38px;
+  padding: 50px 38px;
   background: var(--background);
 }
 
-.skills-card {
-  background: var(--surface);
-  padding: 20px;
-
-  display: flex;
-  flex-direction: column;
-
-  margin-bottom: 32px;
-  border: 3px solid var(--primary);
-
-}
-
-.skills-card h3 {
-  margin: 0 0 28px;
-}
-
-.skills-grid {
+.resume-grid {
   display: grid;
-  grid-template-columns: auto auto 1fr;
-  column-gap: 25px; /* decrease from 32px or 60px */
-}
-
-.skill-item h4 {
-  margin: 0px;
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--text);
-}
-
-.skill-item p {
-  margin: 0 0 8px;
-  font-size: 15px;
-  line-height: 1.5;
-  color: var(--muted);
-}
-
-.education-experience-row {
-  display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 1.7fr 1fr;
   gap: 28px;
-  align-items: stretch; /* makes both cards the same height */
-  margin-top: 32px;
+  align-items: stretch;
 }
 
-.education-card,
-.experience-card {
+.right-column {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 28px;
+}
+
+.overview-card {
   background: var(--surface);
+  border: 3px solid var(--primary);
   padding: 28px;
-  border: 3px solid var(--text);
 }
 
-.education-card h3,
-.experience-card h3 {
-  margin: 0 0 24px;
+.overview-card h3 {
+  margin: 0 0 18px;
   font-size: 28px;
   line-height: 1;
   font-weight: 800;
@@ -369,40 +336,52 @@ p {
   color: var(--text);
 }
 
-.experience-grid {
-  display: grid;
-  grid-template-columns: auto auto 1fr;
-  column-gap: 44px; /* decrease from 32px or 60px */
+.resume-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
 }
 
-.education-card .skill-item,
-.experience-card .skill-item {
-  margin-bottom: 0;
+.skill-line h4 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.skill-line p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--muted);
 }
 
 .education-card h4,
-.experience-card h4 {
-  margin: 0 0 8px;
+.experience-item h4 {
+  margin: 0 0 5px;
   font-size: 18px;
   font-weight: 800;
   color: var(--text);
 }
 
 .education-card p,
-.experience-card p {
+.experience-item p {
   margin: 0;
   font-size: 16px;
   line-height: 1.4;
   color: var(--muted);
 }
 
-.overview-card h3 {
-  margin: 0 0 22px;
-  font-size: 28px;
-  line-height: 1;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--text);
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media (max-width: 850px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 
